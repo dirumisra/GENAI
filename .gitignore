@@ -73,3 +73,13 @@ Thumbs.db
 langchain.db/
 chromadb/
 faiss_index/
+
+# Ignore big data
+pandas/**/dataset/raw/*
+pandas/**/dataset/cleaned/*
+*.csv
+*.json
+*.parquet
+
+# Keep small sample data
+!pandas/**/dataset/samples/**
